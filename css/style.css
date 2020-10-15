@@ -3,10 +3,29 @@ body {
 }
 .home {
   display: grid;
+  width: 100%;
   grid-template-areas:
-    header header header header
-    main main main main
-    main main main main
-    main main main main
-    footer footer footer footer;
+    "header"
+    "main"
+    "footer";
+}
+.home__header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+}
+.home__main {
+  grid-area: main;
+}
+.home__footer {
+  grid-area: footer;
+}
+a:link {
+  text-decoration: none;
+  color: #241100;
+}
+.header__navigation--item {
+  display: inline-block;
+  color: #241100;
 }
