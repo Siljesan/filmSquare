@@ -16,6 +16,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-left: 0;
+  position: sticky;
+  padding: 0.5em;
 }
 .home__main {
   grid-area: main;
@@ -36,9 +38,21 @@ a:link {
   text-decoration: none;
   color: #241100;
 }
+.header__navigation {
+  text-decoration: none;
+  list-style-type: none;
+  color: #241100;
+}
 .header__navigation--item {
   display: inline-block;
   color: #241100;
+  font-size: 30px;
+  font-family: "Anonymous Pro", monospace;
+  padding: 1em;
+}
+.header__icon {
+  color: #5c280a;
+  font-size: 30px;
 }
 .main__box {
   border: solid green 2px;
