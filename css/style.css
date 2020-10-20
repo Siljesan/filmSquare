@@ -11,18 +11,21 @@ body {
 }
 .home__header {
   grid-area: header;
-  border: blue solid 2px;
-  height: 150px;
+  background-color: white;
+  height: 100px;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-left: 0;
-  position: sticky;
+  position: fixed;
   padding: 0.5em;
+  padding-right: 2em;
 }
 .home__main {
   grid-area: main;
   border: red solid 2px;
   height: fit-content;
+  margin-top: 120px;
   display: grid;
   grid-template-areas:
     "box box box box"
@@ -34,30 +37,33 @@ body {
   height: 200px;
   border: solid yellow 2px;
 }
-a:link {
+a {
   text-decoration: none;
   color: #241100;
 }
-.header__navigation {
-  text-decoration: none;
-  list-style-type: none;
-  color: #241100;
+a:hover {
+  color: #d6970f;
 }
 .header__navigation--item {
   display: inline-block;
-  color: #241100;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Anonymous Pro", monospace;
-  padding: 1em;
+  font-weight: bold;
+  padding: 2em;
 }
 .header__icon {
   color: #5c280a;
-  font-size: 30px;
+  font-size: 35px;
+}
+.header__icon--item {
+  padding: 0.3em;
+  margin-right: 1em;
 }
 .main__box {
   border: solid green 2px;
+  background-image: url(../img/pexels-adrien-olichon-3709369.jpg);
   height: 600px;
-  width: 100%;
+  width: 80rem;
   grid-area: box;
 }
 .main__films--header {
